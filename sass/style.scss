@@ -1,0 +1,42 @@
+@import './normalize.scss';
+
+:root {
+  --darkcyan: hsl(185, 75%, 39%);
+  --verydark-desaturated-blue: hsl(229, 23%, 23%);
+  --darkgrayish-blue: hsl(227, 10%, 46%);
+  --white: #fff;
+}
+
+body {
+  background: var(--darkcyan);
+  font-family: 'Kumbh Sans', sans-serif;
+  margin: auto;
+  font-size: 16px;
+}
+
+h1 {
+  color: var(--verydark-desaturated-blue);
+  font-size: 1.5em;
+}
+
+h3 {
+  color: var()
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background: var(--white);
+  width: 326px;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  &__image {
+    border-radius: 50px;
+    overflow: hidden;
+  }
+}
