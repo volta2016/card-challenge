@@ -4,25 +4,23 @@
   --darkcyan: hsl(185, 75%, 39%);
   --verydark-desaturated-blue: hsl(229, 23%, 23%);
   --darkgrayish-blue: hsl(227, 10%, 46%);
-  --white: #fff;
 }
 
 body {
-  background: var(--darkcyan);
   font-family: 'Kumbh Sans', sans-serif;
-  margin: auto;
   font-size: 16px;
+  background-color: var(--darkcyan);
+  background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+
 }
 
 h1 {
   color: var(--verydark-desaturated-blue);
-  font-size: 1.5em;
+  font-size: 1.4em;
+  margin-top: .8em;
 }
-
-h3 {
-  color: var()
-}
-
 .flex {
   display: flex;
   justify-content: center;
@@ -31,21 +29,44 @@ h3 {
   text-align: center;
 }
 .card {
-  background: var(--white);
-  width: 326px;
+  max-width: 326px;
+  flex-grow: 1;
   border-radius: 20px;
   overflow: hidden;
+  background: white url('../images/bg-pattern-card.svg') no-repeat;
+  background-size: 100%;
+  padding-top: 80px;
+  & h1 span {
+    color: var(--darkgrayish-blue);
+    font-weight: 400;
+  }
+  & h2 {
+    color: var(--darkgrayish-blue);
+    font-weight: 400;
+    font-size: 1em;
+    margin-top: .2em;
+    margin-bottom: 1.5em;
+  }
   &__image {
-    border-radius: 50px;
+    border-radius: 50%;
     overflow: hidden;
     margin: auto;
+    border: 7px solid white;
   }
   &__social {
     display: flex;
     justify-content: space-evenly;
+    border-top: 1px solid #e8e8e8;
+    padding: 20px 0;
     & h3 small {
       color: var(--darkgrayish-blue);
       display: block;
+      font-weight: 200;
+      letter-spacing: 1px;
+      font-size: .6em;
+    }
+    & h3  {
+      font-size: 1.2em;
     }
   }
 }
