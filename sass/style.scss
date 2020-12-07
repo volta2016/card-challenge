@@ -36,6 +36,7 @@ h1 {
   background: white url('../images/bg-pattern-card.svg') no-repeat;
   background-size: 100%;
   padding-top: 80px;
+  box-shadow:  5px 5px 10px #0000005c;;
   & h1 span {
     color: var(--darkgrayish-blue);
     font-weight: 400;
