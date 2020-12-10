@@ -32,6 +32,14 @@ const fetchApi = async (id) => {
 
 const printCard = (pokemon) => {
   console.log(pokemon)
- 
+  const contain = window.contain
+  const template = window['template-card'].content
+  const clone = template.cloneNode(true)
+  const fragment = document.createDocumentFragment()
+  // console.log(template)
+
+  clone.querySelector('.card__image').setAttribute('src', 'estatico')
+  fragment.appendChild(clone)
+  contain.appendChild(fragment)
 }
 
