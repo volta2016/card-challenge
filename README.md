@@ -4,6 +4,7 @@
 html5
 css3
 sass 
+javascript
 
 ## Methodology BEM 
 

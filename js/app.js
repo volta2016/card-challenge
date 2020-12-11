@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchApi(random)
 })
 
-
-
 const fetchApi = async (id) => {
   try {
     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
