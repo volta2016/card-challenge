@@ -2,6 +2,7 @@
 
 :root {
   --darkcyan: hsl(185, 75%, 39%);
+  --darkcyantwo: hsl(185deg 75% 34%);
   --verydark-desaturated-blue: hsl(229, 23%, 23%);
   --darkgrayish-blue: hsl(227, 10%, 46%);
 }
@@ -21,6 +22,7 @@ h1 {
   font-size: 1.4em;
   margin-top: .8em;
 }
+
 .flex {
   display: flex;
   justify-content: center;
@@ -28,6 +30,7 @@ h1 {
   height: 100vh;
   text-align: center;
 }
+
 .card {
   width: 326px;
   border-radius: 20px;
@@ -57,8 +60,9 @@ h1 {
     overflow: hidden;
     margin: auto;
     border: 7px solid white;
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
+    margin-top: -30px;
   }
   &__social {
     display: flex;
@@ -75,6 +79,24 @@ h1 {
     & h3  {
       font-size: 1.2em;
     }
+  }
+}
+
+.button {
+  color: white;
+  background: var(--darkcyan);
+  border: none;
+  font-size: 1.2em;
+  padding: .3em .8em;
+  border-radius: .2em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  transition: 0.3s;
+  &:hover {
+    background: var(--darkcyantwo);    
+      z-index: 1;
+      transform: scale(1.05);
   }
 }
 
